@@ -10,6 +10,7 @@
 
 @interface FWTableViewModel : FWViewModel
 
+
 /// The data source of table view.
 @property (nonatomic, copy) NSArray *dataSource;
 
@@ -25,6 +26,8 @@
 @property (nonatomic, copy) NSString *keyword;
 
 @property (nonatomic, strong) RACCommand *didSelectCommand;
+
+@property (nonatomic, assign) BOOL shouldRequestRemoteDataOnViewDidLoad;
 @property (nonatomic, strong, readonly) RACCommand *requestRemoteDataCommand;
 
 @property (nonatomic, assign) UITableViewStyle tableViewStyle;

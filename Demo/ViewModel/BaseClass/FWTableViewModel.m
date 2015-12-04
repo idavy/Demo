@@ -18,6 +18,7 @@
 - (void)initialize {
 	[super initialize];
 	
+	self.shouldRequestRemoteDataOnViewDidLoad = YES;
 	self.tableViewStyle = UITableViewStylePlain;
 	self.shouldSearch = NO;
 	

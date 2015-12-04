@@ -17,14 +17,10 @@
 // The viewController's subtitle
 @property (nonatomic, copy) NSString *subtitle;
 
-@property (nonatomic, assign) BOOL shouldFetchLocalDataOnViewModelInitialize;
-@property (nonatomic, assign) BOOL shouldRequestRemoteDataOnViewDidLoad;
-
 @property (nonatomic, strong, readonly) RACSubject *errors;
 
 - (void)initialize;
 
-- (void)viewModelDidLoad;
 
 // The model which the view model is adapting for the UI.
 @property (nonatomic, readonly, strong) id model;

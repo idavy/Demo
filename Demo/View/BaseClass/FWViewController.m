@@ -41,7 +41,6 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	[self.viewModel viewModelDidLoad];
 	
 	self.view.backgroundColor = [UIColor whiteColor];
 	self.automaticallyAdjustsScrollViewInsets = NO;

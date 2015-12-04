@@ -102,14 +102,12 @@ static const NSTimeInterval RVMViewModelInactiveThrottleInterval = 1;
 - (id)initWithModel:(id)model {
 	self = [super init];
 	if (self == nil) return nil;
-	self.shouldFetchLocalDataOnViewModelInitialize = YES;
-	self.shouldRequestRemoteDataOnViewDidLoad = YES;
 	_model = model;
 	
 	return self;
 }
 - (void)initialize {};
-- (void)viewModelDidLoad{};
+
 - (RACSubject *)errors {
 	if (!_errors) _errors = [RACSubject subject];
 	return _errors;
