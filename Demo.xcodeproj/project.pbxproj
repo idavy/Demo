@@ -15,6 +15,15 @@
 		557C2E2A1C0FD347003A1E0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557C2E281C0FD347003A1E0A /* LaunchScreen.storyboard */; };
 		557C2E351C0FD347003A1E0A /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2E341C0FD347003A1E0A /* DemoTests.m */; };
 		557C2E401C0FD347003A1E0A /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2E3F1C0FD347003A1E0A /* DemoUITests.m */; };
+		557C2E9E1C0FD646003A1E0A /* FWNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2E9D1C0FD646003A1E0A /* FWNavigationViewController.m */; };
+		557C2EA11C0FD7A1003A1E0A /* FWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2EA01C0FD7A1003A1E0A /* FWViewController.m */; };
+		557C2EA51C0FD7FF003A1E0A /* FWViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2EA41C0FD7FF003A1E0A /* FWViewModel.m */; };
+		557C2EAA1C1024DA003A1E0A /* FWTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2EA91C1024DA003A1E0A /* FWTableViewModel.m */; };
+		557C2EAD1C10285E003A1E0A /* FWTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2EAC1C10285E003A1E0A /* FWTableViewController.m */; };
+		557C2F081C103E70003A1E0A /* UINavigationItem+MRCBackBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2EFD1C103E70003A1E0A /* UINavigationItem+MRCBackBarButtonItem.m */; };
+		557C2F091C103E70003A1E0A /* UISearchBar+MRCShowsCancelButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2EFF1C103E70003A1E0A /* UISearchBar+MRCShowsCancelButton.m */; };
+		557C2F0C1C104170003A1E0A /* FWTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2F0B1C104170003A1E0A /* FWTestViewController.m */; };
+		67CFC975D593287B547C95D8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 307E3D377AC52EB3267B605F /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		307E3D377AC52EB3267B605F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4122EE91D358A626CA8CF856 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		557C2E171C0FD347003A1E0A /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		557C2E1B1C0FD347003A1E0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		557C2E1D1C0FD347003A1E0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +62,24 @@
 		557C2E3B1C0FD347003A1E0A /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		557C2E3F1C0FD347003A1E0A /* DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUITests.m; sourceTree = "<group>"; };
 		557C2E411C0FD347003A1E0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		557C2E9C1C0FD646003A1E0A /* FWNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWNavigationViewController.h; sourceTree = "<group>"; };
+		557C2E9D1C0FD646003A1E0A /* FWNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWNavigationViewController.m; sourceTree = "<group>"; };
+		557C2E9F1C0FD7A1003A1E0A /* FWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWViewController.h; sourceTree = "<group>"; };
+		557C2EA01C0FD7A1003A1E0A /* FWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWViewController.m; sourceTree = "<group>"; };
+		557C2EA31C0FD7FF003A1E0A /* FWViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWViewModel.h; sourceTree = "<group>"; };
+		557C2EA41C0FD7FF003A1E0A /* FWViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWViewModel.m; sourceTree = "<group>"; };
+		557C2EA71C0FEEA8003A1E0A /* FWDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FWDemo-Prefix.pch"; sourceTree = "<group>"; };
+		557C2EA81C1024DA003A1E0A /* FWTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWTableViewModel.h; sourceTree = "<group>"; };
+		557C2EA91C1024DA003A1E0A /* FWTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWTableViewModel.m; sourceTree = "<group>"; };
+		557C2EAB1C10285E003A1E0A /* FWTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWTableViewController.h; sourceTree = "<group>"; };
+		557C2EAC1C10285E003A1E0A /* FWTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWTableViewController.m; sourceTree = "<group>"; };
+		557C2EFC1C103E70003A1E0A /* UINavigationItem+MRCBackBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+MRCBackBarButtonItem.h"; sourceTree = "<group>"; };
+		557C2EFD1C103E70003A1E0A /* UINavigationItem+MRCBackBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+MRCBackBarButtonItem.m"; sourceTree = "<group>"; };
+		557C2EFE1C103E70003A1E0A /* UISearchBar+MRCShowsCancelButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+MRCShowsCancelButton.h"; sourceTree = "<group>"; };
+		557C2EFF1C103E70003A1E0A /* UISearchBar+MRCShowsCancelButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+MRCShowsCancelButton.m"; sourceTree = "<group>"; };
+		557C2F0A1C104170003A1E0A /* FWTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWTestViewController.h; sourceTree = "<group>"; };
+		557C2F0B1C104170003A1E0A /* FWTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWTestViewController.m; sourceTree = "<group>"; };
+		A4903829E2D36840086D6B44 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67CFC975D593287B547C95D8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +108,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		393D5545A0DAD2A891FCB843 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				307E3D377AC52EB3267B605F /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		557C2E0E1C0FD347003A1E0A = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +123,8 @@
 				557C2E331C0FD347003A1E0A /* DemoTests */,
 				557C2E3E1C0FD347003A1E0A /* DemoUITests */,
 				557C2E181C0FD347003A1E0A /* Products */,
+				C41273405F68E1968B55BD25 /* Pods */,
+				393D5545A0DAD2A891FCB843 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,10 +145,15 @@
 				557C2E1E1C0FD347003A1E0A /* AppDelegate.m */,
 				557C2E201C0FD347003A1E0A /* ViewController.h */,
 				557C2E211C0FD347003A1E0A /* ViewController.m */,
+				557C2F0A1C104170003A1E0A /* FWTestViewController.h */,
+				557C2F0B1C104170003A1E0A /* FWTestViewController.m */,
+				557C2E671C0FD589003A1E0A /* View */,
+				557C2E681C0FD589003A1E0A /* ViewModel */,
 				557C2E231C0FD347003A1E0A /* Main.storyboard */,
 				557C2E261C0FD347003A1E0A /* Assets.xcassets */,
 				557C2E281C0FD347003A1E0A /* LaunchScreen.storyboard */,
 				557C2E2B1C0FD347003A1E0A /* Info.plist */,
+				557C2EA71C0FEEA8003A1E0A /* FWDemo-Prefix.pch */,
 				557C2E1A1C0FD347003A1E0A /* Supporting Files */,
 			);
 			path = Demo;
@@ -140,6 +185,75 @@
 			path = DemoUITests;
 			sourceTree = "<group>";
 		};
+		557C2E671C0FD589003A1E0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				557C2E7E1C0FD5CB003A1E0A /* BaseClass */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		557C2E681C0FD589003A1E0A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				557C2E691C0FD589003A1E0A /* BaseClass */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		557C2E691C0FD589003A1E0A /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				557C2EA61C0FD817003A1E0A /* My */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		557C2E7E1C0FD5CB003A1E0A /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				557C2EFC1C103E70003A1E0A /* UINavigationItem+MRCBackBarButtonItem.h */,
+				557C2EFD1C103E70003A1E0A /* UINavigationItem+MRCBackBarButtonItem.m */,
+				557C2EFE1C103E70003A1E0A /* UISearchBar+MRCShowsCancelButton.h */,
+				557C2EFF1C103E70003A1E0A /* UISearchBar+MRCShowsCancelButton.m */,
+				557C2EA21C0FD7AF003A1E0A /* My */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		557C2EA21C0FD7AF003A1E0A /* My */ = {
+			isa = PBXGroup;
+			children = (
+				557C2E9C1C0FD646003A1E0A /* FWNavigationViewController.h */,
+				557C2E9D1C0FD646003A1E0A /* FWNavigationViewController.m */,
+				557C2E9F1C0FD7A1003A1E0A /* FWViewController.h */,
+				557C2EA01C0FD7A1003A1E0A /* FWViewController.m */,
+				557C2EAB1C10285E003A1E0A /* FWTableViewController.h */,
+				557C2EAC1C10285E003A1E0A /* FWTableViewController.m */,
+			);
+			name = My;
+			sourceTree = "<group>";
+		};
+		557C2EA61C0FD817003A1E0A /* My */ = {
+			isa = PBXGroup;
+			children = (
+				557C2EA31C0FD7FF003A1E0A /* FWViewModel.h */,
+				557C2EA41C0FD7FF003A1E0A /* FWViewModel.m */,
+				557C2EA81C1024DA003A1E0A /* FWTableViewModel.h */,
+				557C2EA91C1024DA003A1E0A /* FWTableViewModel.m */,
+			);
+			name = My;
+			sourceTree = "<group>";
+		};
+		C41273405F68E1968B55BD25 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4903829E2D36840086D6B44 /* Pods.debug.xcconfig */,
+				4122EE91D358A626CA8CF856 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +261,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 557C2E441C0FD347003A1E0A /* Build configuration list for PBXNativeTarget "Demo" */;
 			buildPhases = (
+				5220FA20FAE3A2E91F733961 /* Check Pods Manifest.lock */,
 				557C2E131C0FD347003A1E0A /* Sources */,
 				557C2E141C0FD347003A1E0A /* Frameworks */,
 				557C2E151C0FD347003A1E0A /* Resources */,
+				59D79892039E8EED45E04B7F /* Embed Pods Frameworks */,
+				8231581342916547C1D6287A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,6 +319,7 @@
 		557C2E0F1C0FD347003A1E0A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = FW;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Dave;
 				TargetAttributes = {
@@ -265,12 +383,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5220FA20FAE3A2E91F733961 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		59D79892039E8EED45E04B7F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8231581342916547C1D6287A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		557C2E131C0FD347003A1E0A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				557C2F0C1C104170003A1E0A /* FWTestViewController.m in Sources */,
 				557C2E221C0FD347003A1E0A /* ViewController.m in Sources */,
+				557C2EAD1C10285E003A1E0A /* FWTableViewController.m in Sources */,
+				557C2E9E1C0FD646003A1E0A /* FWNavigationViewController.m in Sources */,
+				557C2EA51C0FD7FF003A1E0A /* FWViewModel.m in Sources */,
+				557C2F091C103E70003A1E0A /* UISearchBar+MRCShowsCancelButton.m in Sources */,
+				557C2EAA1C1024DA003A1E0A /* FWTableViewModel.m in Sources */,
+				557C2EA11C0FD7A1003A1E0A /* FWViewController.m in Sources */,
+				557C2F081C103E70003A1E0A /* UINavigationItem+MRCBackBarButtonItem.m in Sources */,
 				557C2E1F1C0FD347003A1E0A /* AppDelegate.m in Sources */,
 				557C2E1C1C0FD347003A1E0A /* main.m in Sources */,
 			);
@@ -409,8 +583,11 @@
 		};
 		557C2E451C0FD347003A1E0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4903829E2D36840086D6B44 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Demo/FWDemo-Prefix.pch";
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cwb.Demo;
@@ -420,8 +597,11 @@
 		};
 		557C2E461C0FD347003A1E0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4122EE91D358A626CA8CF856 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Demo/FWDemo-Prefix.pch";
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cwb.Demo;
@@ -496,6 +676,7 @@
 				557C2E461C0FD347003A1E0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		557C2E471C0FD347003A1E0A /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +685,7 @@
 				557C2E491C0FD347003A1E0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		557C2E4A1C0FD347003A1E0A /* Build configuration list for PBXNativeTarget "DemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +694,7 @@
 				557C2E4C1C0FD347003A1E0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

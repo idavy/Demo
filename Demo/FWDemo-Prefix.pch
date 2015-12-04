@@ -1,0 +1,24 @@
+//
+//  FWDemo-Prefix.pch
+//  Demo
+//
+//  Created by Dave on 15/12/3.
+//  Copyright © 2015年 Dave. All rights reserved.
+//
+
+#ifndef FWDemo_Prefix_pch
+#define FWDemo_Prefix_pch
+
+#import <objc/runtime.h>
+#import "ReactiveCocoa.h"
+
+#define RGB(r, g, b) [UIColor colorWithRed:((r) / 255.0) green:((g) / 255.0) blue:((b) / 255.0) alpha:1.0]
+#define RGBAlpha(r, g, b, a) [UIColor colorWithRed:((r) / 255.0) green:((g) / 255.0) blue:((b) / 255.0) alpha:(a)]
+
+#define HexRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define HexRGBAlpha(rgbValue, a) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:(a)]
+
+#define colorB2 0xC8C7CC
+#define colorI5 0x24AFFC
+
+#endif

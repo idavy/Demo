@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "FWTestViewController.h"
+#import "FWTableViewModel.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +17,13 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+}
+- (IBAction)btnClick:(id)sender {
+	FWTableViewModel *viewModle = [[FWTableViewModel alloc]initWithModel:nil];
+	FWTestViewController *tsvc = [[FWTestViewController alloc]initWithViewModel:viewModle];
+	
+	UINavigationController *nvc = [[UINavigationController alloc]initWithRootViewController:tsvc];
+	[self presentViewController:nvc animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
