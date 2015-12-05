@@ -22,7 +22,9 @@
 	FWTableViewModel *viewModle = [[FWTableViewModel alloc]initWithModel:nil];
 	FWTestViewController *tsvc = [[FWTestViewController alloc]initWithViewModel:viewModle];
 
-    [self.navigationController pushViewController:tsvc animated:YES];
+//    [self.navigationController pushViewController:tsvc animated:YES];
+    UINavigationController *nvc = [[UINavigationController alloc]initWithRootViewController:tsvc];
+    [self presentViewController:nvc animated:YES completion:nil];
 }
 - (void)popedCallback:(id)obj
 {

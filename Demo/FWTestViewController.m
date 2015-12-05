@@ -35,7 +35,8 @@
 - (void)rightItemBtnClick
 {
 //    [self.navigationController fw_popToRootVCAnimated:YES sendObject:@"aaaa"];
-    [self.navigationController fw_popToTopVCClass:NSClassFromString(@"viewController") animated:YES sendObject:@"bbbbb"];
+//    [self.navigationController fw_popToTopVCClass:NSClassFromString(@"viewController") animated:YES sendObject:@"bbbbb"];
+    [self fw_dismissVCAnimated:YES sendObject:@"cccccc" completion:nil];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

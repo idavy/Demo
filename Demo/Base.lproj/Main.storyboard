@@ -34,10 +34,11 @@
             </objects>
             <point key="canvasLocation" x="1054" y="418"/>
         </scene>
-        <!--Navigation View Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="G3h-E0-Zfl">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YNx-pH-e8E" customClass="FWNavigationViewController" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yy9-OE-bvT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YNx-pH-e8E" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZSi-uy-2Q3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -49,7 +50,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9Fw-QG-Xk2"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yy9-OE-bvT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="242" y="418"/>
         </scene>

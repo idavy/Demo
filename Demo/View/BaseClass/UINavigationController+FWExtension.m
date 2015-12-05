@@ -8,7 +8,18 @@
 
 #import "UINavigationController+FWExtension.h"
 
+@implementation UIViewController (FWViewControllerCallback)
+- (void)popedCallback:(id)obj{}
+- (void)fw_dismissVCAnimated:(BOOL)flag sendObject:(id)obj completion:(void (^)(void))completion {
+    [self dismissViewControllerAnimated:flag completion:completion];
+    id vc = self.presentingViewController;
+    UIViewController *desvc = [vc isKindOfClass:[UINavigationController class]]?[vc topViewController]:vc;
+    if ([desvc respondsToSelector:@selector(popedCallback:)]) {
+        [desvc popedCallback:obj];
+    }
+}
 
+@end
 @implementation UINavigationController (FWExtension)
 
 - (NSArray<UIViewController *> *)fw_popToRootVCAnimated:(BOOL)animated sendObject:(id)obj {

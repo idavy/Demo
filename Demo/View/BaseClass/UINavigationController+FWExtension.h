@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-@interface UIViewController (NavCallback)
+@interface UIViewController (FWViewControllerCallback)
 - (void)popedCallback:(id)obj;
+- (void)fw_dismissVCAnimated:(BOOL)flag sendObject:(id)obj completion:(void (^)(void))completion;
 @end
 @interface UINavigationController (FWExtension)
 
