@@ -29,9 +29,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	self.viewModel.tableViewStyle = UITableViewStyleGrouped;
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(rightItemBtnClick)];
+    self.navigationItem.rightBarButtonItem = rightItem;
 }
-
+- (void)rightItemBtnClick
+{
+//    [self.navigationController fw_popToRootVCAnimated:YES sendObject:@"aaaa"];
+    [self.navigationController fw_popToTopVCClass:NSClassFromString(@"viewController") animated:YES sendObject:@"bbbbb"];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }

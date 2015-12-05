@@ -21,11 +21,13 @@
 - (IBAction)btnClick:(id)sender {
 	FWTableViewModel *viewModle = [[FWTableViewModel alloc]initWithModel:nil];
 	FWTestViewController *tsvc = [[FWTestViewController alloc]initWithViewModel:viewModle];
-	
-	UINavigationController *nvc = [[UINavigationController alloc]initWithRootViewController:tsvc];
-	[self presentViewController:nvc animated:YES completion:nil];
-}
 
+    [self.navigationController pushViewController:tsvc animated:YES];
+}
+- (void)popedCallback:(id)obj
+{
+    
+}
 - (void)didReceiveMemoryWarning {
 	[super didReceiveMemoryWarning];
 	// Dispose of any resources that can be recreated.

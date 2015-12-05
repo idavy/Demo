@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		557346491C12BF1600DBD318 /* UINavigationController+FWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 557346481C12BF1600DBD318 /* UINavigationController+FWExtension.m */; settings = {ASSET_TAGS = (); }; };
+		5573464C1C13370B00DBD318 /* UINavigationItem+MRCBackBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5573464B1C13370B00DBD318 /* UINavigationItem+MRCBackBarButtonItem.m */; settings = {ASSET_TAGS = (); }; };
 		557C2E1C1C0FD347003A1E0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2E1B1C0FD347003A1E0A /* main.m */; };
 		557C2E1F1C0FD347003A1E0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2E1E1C0FD347003A1E0A /* AppDelegate.m */; };
 		557C2E221C0FD347003A1E0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2E211C0FD347003A1E0A /* ViewController.m */; };
@@ -15,12 +17,10 @@
 		557C2E2A1C0FD347003A1E0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557C2E281C0FD347003A1E0A /* LaunchScreen.storyboard */; };
 		557C2E351C0FD347003A1E0A /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2E341C0FD347003A1E0A /* DemoTests.m */; };
 		557C2E401C0FD347003A1E0A /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2E3F1C0FD347003A1E0A /* DemoUITests.m */; };
-		557C2E9E1C0FD646003A1E0A /* FWNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2E9D1C0FD646003A1E0A /* FWNavigationViewController.m */; };
 		557C2EA11C0FD7A1003A1E0A /* FWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2EA01C0FD7A1003A1E0A /* FWViewController.m */; };
 		557C2EA51C0FD7FF003A1E0A /* FWViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2EA41C0FD7FF003A1E0A /* FWViewModel.m */; };
 		557C2EAA1C1024DA003A1E0A /* FWTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2EA91C1024DA003A1E0A /* FWTableViewModel.m */; };
 		557C2EAD1C10285E003A1E0A /* FWTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2EAC1C10285E003A1E0A /* FWTableViewController.m */; };
-		557C2F081C103E70003A1E0A /* UINavigationItem+MRCBackBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2EFD1C103E70003A1E0A /* UINavigationItem+MRCBackBarButtonItem.m */; };
 		557C2F091C103E70003A1E0A /* UISearchBar+MRCShowsCancelButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2EFF1C103E70003A1E0A /* UISearchBar+MRCShowsCancelButton.m */; };
 		557C2F0C1C104170003A1E0A /* FWTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2F0B1C104170003A1E0A /* FWTestViewController.m */; };
 		67CFC975D593287B547C95D8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 307E3D377AC52EB3267B605F /* libPods.a */; };
@@ -46,6 +46,10 @@
 /* Begin PBXFileReference section */
 		307E3D377AC52EB3267B605F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4122EE91D358A626CA8CF856 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		557346471C12BF1600DBD318 /* UINavigationController+FWExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FWExtension.h"; sourceTree = "<group>"; };
+		557346481C12BF1600DBD318 /* UINavigationController+FWExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FWExtension.m"; sourceTree = "<group>"; };
+		5573464A1C13370B00DBD318 /* UINavigationItem+MRCBackBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+MRCBackBarButtonItem.h"; sourceTree = "<group>"; };
+		5573464B1C13370B00DBD318 /* UINavigationItem+MRCBackBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+MRCBackBarButtonItem.m"; sourceTree = "<group>"; };
 		557C2E171C0FD347003A1E0A /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		557C2E1B1C0FD347003A1E0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		557C2E1D1C0FD347003A1E0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,8 +66,6 @@
 		557C2E3B1C0FD347003A1E0A /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		557C2E3F1C0FD347003A1E0A /* DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUITests.m; sourceTree = "<group>"; };
 		557C2E411C0FD347003A1E0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		557C2E9C1C0FD646003A1E0A /* FWNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWNavigationViewController.h; sourceTree = "<group>"; };
-		557C2E9D1C0FD646003A1E0A /* FWNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWNavigationViewController.m; sourceTree = "<group>"; };
 		557C2E9F1C0FD7A1003A1E0A /* FWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWViewController.h; sourceTree = "<group>"; };
 		557C2EA01C0FD7A1003A1E0A /* FWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWViewController.m; sourceTree = "<group>"; };
 		557C2EA31C0FD7FF003A1E0A /* FWViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWViewModel.h; sourceTree = "<group>"; };
@@ -73,8 +75,6 @@
 		557C2EA91C1024DA003A1E0A /* FWTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWTableViewModel.m; sourceTree = "<group>"; };
 		557C2EAB1C10285E003A1E0A /* FWTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWTableViewController.h; sourceTree = "<group>"; };
 		557C2EAC1C10285E003A1E0A /* FWTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWTableViewController.m; sourceTree = "<group>"; };
-		557C2EFC1C103E70003A1E0A /* UINavigationItem+MRCBackBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+MRCBackBarButtonItem.h"; sourceTree = "<group>"; };
-		557C2EFD1C103E70003A1E0A /* UINavigationItem+MRCBackBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+MRCBackBarButtonItem.m"; sourceTree = "<group>"; };
 		557C2EFE1C103E70003A1E0A /* UISearchBar+MRCShowsCancelButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+MRCShowsCancelButton.h"; sourceTree = "<group>"; };
 		557C2EFF1C103E70003A1E0A /* UISearchBar+MRCShowsCancelButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+MRCShowsCancelButton.m"; sourceTree = "<group>"; };
 		557C2F0A1C104170003A1E0A /* FWTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWTestViewController.h; sourceTree = "<group>"; };
@@ -212,8 +212,8 @@
 		557C2E7E1C0FD5CB003A1E0A /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
-				557C2EFC1C103E70003A1E0A /* UINavigationItem+MRCBackBarButtonItem.h */,
-				557C2EFD1C103E70003A1E0A /* UINavigationItem+MRCBackBarButtonItem.m */,
+				5573464A1C13370B00DBD318 /* UINavigationItem+MRCBackBarButtonItem.h */,
+				5573464B1C13370B00DBD318 /* UINavigationItem+MRCBackBarButtonItem.m */,
 				557C2EFE1C103E70003A1E0A /* UISearchBar+MRCShowsCancelButton.h */,
 				557C2EFF1C103E70003A1E0A /* UISearchBar+MRCShowsCancelButton.m */,
 				557C2EA21C0FD7AF003A1E0A /* My */,
@@ -224,8 +224,8 @@
 		557C2EA21C0FD7AF003A1E0A /* My */ = {
 			isa = PBXGroup;
 			children = (
-				557C2E9C1C0FD646003A1E0A /* FWNavigationViewController.h */,
-				557C2E9D1C0FD646003A1E0A /* FWNavigationViewController.m */,
+				557346471C12BF1600DBD318 /* UINavigationController+FWExtension.h */,
+				557346481C12BF1600DBD318 /* UINavigationController+FWExtension.m */,
 				557C2E9F1C0FD7A1003A1E0A /* FWViewController.h */,
 				557C2EA01C0FD7A1003A1E0A /* FWViewController.m */,
 				557C2EAB1C10285E003A1E0A /* FWTableViewController.h */,
@@ -439,12 +439,12 @@
 				557C2F0C1C104170003A1E0A /* FWTestViewController.m in Sources */,
 				557C2E221C0FD347003A1E0A /* ViewController.m in Sources */,
 				557C2EAD1C10285E003A1E0A /* FWTableViewController.m in Sources */,
-				557C2E9E1C0FD646003A1E0A /* FWNavigationViewController.m in Sources */,
 				557C2EA51C0FD7FF003A1E0A /* FWViewModel.m in Sources */,
+				5573464C1C13370B00DBD318 /* UINavigationItem+MRCBackBarButtonItem.m in Sources */,
 				557C2F091C103E70003A1E0A /* UISearchBar+MRCShowsCancelButton.m in Sources */,
+				557346491C12BF1600DBD318 /* UINavigationController+FWExtension.m in Sources */,
 				557C2EAA1C1024DA003A1E0A /* FWTableViewModel.m in Sources */,
 				557C2EA11C0FD7A1003A1E0A /* FWViewController.m in Sources */,
-				557C2F081C103E70003A1E0A /* UINavigationItem+MRCBackBarButtonItem.m in Sources */,
 				557C2E1F1C0FD347003A1E0A /* AppDelegate.m in Sources */,
 				557C2E1C1C0FD347003A1E0A /* main.m in Sources */,
 			);
@@ -589,6 +589,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Demo/FWDemo-Prefix.pch";
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cwb.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -603,6 +604,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Demo/FWDemo-Prefix.pch";
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cwb.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
