@@ -22,4 +22,6 @@
 
 /// Binds the corresponding view model to the view.
 - (void)bindViewModel;
+
+- (void)popCallback:(id)obj;
 @end

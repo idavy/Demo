@@ -127,6 +127,7 @@
 	[super viewWillDisappear:animated];
 	self.viewModel.active = NO;
 }
+- (void)popCallback:(id)obj{}
 
 #pragma mark - Orientations
 - (BOOL)shouldAutorotate{

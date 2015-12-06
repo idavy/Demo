@@ -14,7 +14,7 @@
     [self dismissViewControllerAnimated:flag completion:completion];
     id vc = self.presentingViewController;
     UIViewController *desvc = [vc isKindOfClass:[UINavigationController class]]?[vc topViewController]:vc;
-    if ([desvc respondsToSelector:@selector(popedCallback:)]) {
+    if ([desvc respondsToSelector:@selector(popedCallback:)] && vc) {
         [desvc popedCallback:obj];
     }
 }
@@ -23,9 +23,15 @@
 @implementation UINavigationController (FWExtension)
 
 - (NSArray<UIViewController *> *)fw_popToRootVCAnimated:(BOOL)animated sendObject:(id)obj {
+	if ([self isKindOfClass:NSClassFromString(@"UIMoreNavigationController")]) {
+		if (self.viewControllers.count >= 2) {
+			[self popToViewController:self.navigationController.viewControllers[1] animated:animated];
+			return [self fw_popToVCAtIndex:1 animated:animated sendObject:obj];
+		}
+	}
     NSArray *popedArray = [self popToRootViewControllerAnimated:animated];
     UIViewController *desvc = self.topViewController;
-    if ([desvc respondsToSelector:@selector(popedCallback:)]) {
+    if ([desvc respondsToSelector:@selector(popedCallback:)] && popedArray) {
         [desvc popedCallback:obj];
     }
     return popedArray;
@@ -34,7 +40,7 @@
     if (!viewController) return nil;
     NSArray *popedArray = [self popToViewController:viewController animated:animated];
     UIViewController *desvc = self.topViewController;
-    if ([desvc respondsToSelector:@selector(popedCallback:)]) {
+    if ([desvc respondsToSelector:@selector(popedCallback:)] && popedArray) {
         [desvc popedCallback:obj];
     }
     return popedArray;
@@ -42,7 +48,7 @@
 - (UIViewController *)fw_popVCAnimated:(BOOL)animated sendObject:(id)obj {
     UIViewController *popedVC = [self popViewControllerAnimated:animated];
     UIViewController *desvc = self.topViewController;
-    if ([desvc respondsToSelector:@selector(popedCallback:)]) {
+    if ([desvc respondsToSelector:@selector(popedCallback:)] && popedVC) {
         [desvc popedCallback:obj];
     }
     return popedVC;
