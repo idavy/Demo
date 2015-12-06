@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		557346491C12BF1600DBD318 /* UINavigationController+FWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 557346481C12BF1600DBD318 /* UINavigationController+FWExtension.m */; settings = {ASSET_TAGS = (); }; };
-		5573464C1C13370B00DBD318 /* UINavigationItem+MRCBackBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5573464B1C13370B00DBD318 /* UINavigationItem+MRCBackBarButtonItem.m */; settings = {ASSET_TAGS = (); }; };
+		557346491C12BF1600DBD318 /* UINavigationController+FWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 557346481C12BF1600DBD318 /* UINavigationController+FWExtension.m */; };
+		5573464C1C13370B00DBD318 /* UINavigationItem+MRCBackBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5573464B1C13370B00DBD318 /* UINavigationItem+MRCBackBarButtonItem.m */; };
+		55789F831C148C6700303910 /* HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 55789F801C148C6700303910 /* HTTPRequest.m */; };
+		55789F841C148C6700303910 /* HTTPRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 55789F821C148C6700303910 /* HTTPRequestManager.m */; };
+		55789F8C1C14928600303910 /* FWTestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 55789F8B1C14928600303910 /* FWTestViewModel.m */; };
 		557C2E1C1C0FD347003A1E0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2E1B1C0FD347003A1E0A /* main.m */; };
 		557C2E1F1C0FD347003A1E0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2E1E1C0FD347003A1E0A /* AppDelegate.m */; };
 		557C2E221C0FD347003A1E0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2E211C0FD347003A1E0A /* ViewController.m */; };
@@ -50,6 +53,12 @@
 		557346481C12BF1600DBD318 /* UINavigationController+FWExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FWExtension.m"; sourceTree = "<group>"; };
 		5573464A1C13370B00DBD318 /* UINavigationItem+MRCBackBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+MRCBackBarButtonItem.h"; sourceTree = "<group>"; };
 		5573464B1C13370B00DBD318 /* UINavigationItem+MRCBackBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+MRCBackBarButtonItem.m"; sourceTree = "<group>"; };
+		55789F7F1C148C6700303910 /* HTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequest.h; sourceTree = "<group>"; };
+		55789F801C148C6700303910 /* HTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequest.m; sourceTree = "<group>"; };
+		55789F811C148C6700303910 /* HTTPRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequestManager.h; sourceTree = "<group>"; };
+		55789F821C148C6700303910 /* HTTPRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequestManager.m; sourceTree = "<group>"; };
+		55789F8A1C14928600303910 /* FWTestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWTestViewModel.h; sourceTree = "<group>"; };
+		55789F8B1C14928600303910 /* FWTestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWTestViewModel.m; sourceTree = "<group>"; };
 		557C2E171C0FD347003A1E0A /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		557C2E1B1C0FD347003A1E0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		557C2E1D1C0FD347003A1E0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -147,6 +156,12 @@
 				557C2E211C0FD347003A1E0A /* ViewController.m */,
 				557C2F0A1C104170003A1E0A /* FWTestViewController.h */,
 				557C2F0B1C104170003A1E0A /* FWTestViewController.m */,
+				55789F8A1C14928600303910 /* FWTestViewModel.h */,
+				55789F8B1C14928600303910 /* FWTestViewModel.m */,
+				55789F7F1C148C6700303910 /* HTTPRequest.h */,
+				55789F801C148C6700303910 /* HTTPRequest.m */,
+				55789F811C148C6700303910 /* HTTPRequestManager.h */,
+				55789F821C148C6700303910 /* HTTPRequestManager.m */,
 				557C2E671C0FD589003A1E0A /* View */,
 				557C2E681C0FD589003A1E0A /* ViewModel */,
 				557C2E231C0FD347003A1E0A /* Main.storyboard */,
@@ -437,13 +452,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				557C2F0C1C104170003A1E0A /* FWTestViewController.m in Sources */,
+				55789F831C148C6700303910 /* HTTPRequest.m in Sources */,
 				557C2E221C0FD347003A1E0A /* ViewController.m in Sources */,
 				557C2EAD1C10285E003A1E0A /* FWTableViewController.m in Sources */,
 				557C2EA51C0FD7FF003A1E0A /* FWViewModel.m in Sources */,
 				5573464C1C13370B00DBD318 /* UINavigationItem+MRCBackBarButtonItem.m in Sources */,
 				557C2F091C103E70003A1E0A /* UISearchBar+MRCShowsCancelButton.m in Sources */,
+				55789F8C1C14928600303910 /* FWTestViewModel.m in Sources */,
 				557346491C12BF1600DBD318 /* UINavigationController+FWExtension.m in Sources */,
 				557C2EAA1C1024DA003A1E0A /* FWTableViewModel.m in Sources */,
+				55789F841C148C6700303910 /* HTTPRequestManager.m in Sources */,
 				557C2EA11C0FD7A1003A1E0A /* FWViewController.m in Sources */,
 				557C2E1F1C0FD347003A1E0A /* AppDelegate.m in Sources */,
 				557C2E1C1C0FD347003A1E0A /* main.m in Sources */,

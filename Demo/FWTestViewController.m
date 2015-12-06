@@ -20,10 +20,6 @@
 {
 	self = [super initWithViewModel:viewModel];
 	if (self == nil) return nil;
-	self.viewModel.tableViewStyle = UITableViewStylePlain;
-	self.viewModel.shouldSearch = YES;
-	self.viewModel.shouldPullToRefresh = YES;
-	self.viewModel.shouldInfiniteScrolling = YES;
 	return self;
 }
 
@@ -31,12 +27,24 @@
     [super viewDidLoad];
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(rightItemBtnClick)];
     self.navigationItem.rightBarButtonItem = rightItem;
+    
+    
+    @weakify(self)
+    [self.viewModel.requestRemoteDataCommand.executing subscribeNext:^(NSNumber *executing) {
+        @strongify(self)
+        if (executing.boolValue && self.viewModel.dataSource.count == 0) {
+//            [MBProgressHUD showHUDAddedTo:self.view animated:YES].labelText = self.labelText;
+        } else {
+//            [MBProgressHUD hideHUDForView:self.view animated:YES];
+        }
+    }];
+    
 }
 - (void)rightItemBtnClick
 {
-//    [self.navigationController fw_popToRootVCAnimated:YES sendObject:@"aaaa"];
+    [self.navigationController fw_popToRootVCAnimated:YES sendObject:@"aaaa"];
 //    [self.navigationController fw_popToTopVCClass:NSClassFromString(@"viewController") animated:YES sendObject:@"bbbbb"];
-    [self fw_dismissVCAnimated:YES sendObject:@"cccccc" completion:nil];
+//    [self fw_dismissVCAnimated:YES sendObject:@"cccccc" completion:nil];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
