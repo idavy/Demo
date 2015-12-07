@@ -1,14 +1,13 @@
 //
-//  HTTPRequestManager.m
-//  ProofMVVM
+//  FWHTTPRequestManager.m
 //
 //  Created by Dave on 15/11/25.
 //  Copyright © 2015年 Dave. All rights reserved.
 //
 
-#import "HTTPRequestManager.h"
+#import "FWHTTPRequestManager.h"
 
-NSString *const HTTPRequestSucceedErrorDomain = @"HTTPRequestSucceedErrorDomain";
+NSString *const FWHTTPRequestSucceedErrorDomain = @"FWHTTPRequestSucceedErrorDomain";
 
 NSString * errorDescription(NSInteger code) {
 	switch (code) {
@@ -69,7 +68,7 @@ NSString * resultMessage(RESULT_CODE resultCode, NSString *message) {
 	return @"请求失败";
 }
 
-@implementation HTTPRequestManager
+@implementation FWHTTPRequestManager
 + (instancetype)manager {
 	return [[self alloc]init];
 }
@@ -110,7 +109,7 @@ NSString * resultMessage(RESULT_CODE resultCode, NSString *message) {
 			NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
 			userInfo[RAFNetworkingOperationErrorKey] = value.first;
 			userInfo[NSLocalizedDescriptionKey] = resultMessage([responseObject[@"resultCode"] integerValue], responseObject[@"message"]);
-			NSError *error = [NSError errorWithDomain:HTTPRequestSucceedErrorDomain code:-200 userInfo:userInfo];
+			NSError *error = [NSError errorWithDomain:FWHTTPRequestSucceedErrorDomain code:-200 userInfo:userInfo];
 			[subscriber sendError:error];
 		}
 		return nil;

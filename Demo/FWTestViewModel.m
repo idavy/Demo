@@ -25,6 +25,9 @@
     }] map:^id(NSArray *repositories) {
         return nil;
     }];
+	[self.requestRemoteDataCommand.errors subscribeNext:^(id x) {
+		
+	}];
 }
 - (RACSignal *)requestRemoteDataSignalWithPage:(NSUInteger)page
 {

@@ -1,6 +1,5 @@
 //
-//  HTTPRequestManager.h
-//  ProofMVVM
+//  FWHTTPRequestManager.h
 //
 //  Created by Dave on 15/11/25.
 //  Copyright © 2015年 Dave. All rights reserved.
@@ -9,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import "AFHTTPRequestOperationManager+RACSupport.h"
 
-extern  NSString *const HTTPRequestSucceedErrorDomain;
+extern  NSString *const FWHTTPRequestSucceedErrorDomain;
 typedef NS_ENUM(NSInteger, RESULT_CODE) {
 	RESULT_CODE_SPECIAL                    = -1,
 	RESULT_CODE_SUCCESS                    = 0,
@@ -42,7 +41,7 @@ typedef NS_ENUM(NSInteger, RESULT_CODE) {
 	RESULT_CODE_2010                       = 2010
 };
 
-@interface HTTPRequestManager : NSObject
+@interface FWHTTPRequestManager : NSObject
 @property (nonatomic,strong) AFHTTPRequestOperationManager *afManager;
 @property (nonatomic,strong) RACSignal *errorSignal;
 @property (nonatomic,assign) BOOL logData;

@@ -1,16 +1,18 @@
 //
-//  UINavigationController+FWExtension.h
+//  UIViewController+FWExtension.h
 //  Demo
 //
-//  Created by FangWei on 15/12/5.
+//  Created by Dave on 15/12/7.
 //  Copyright © 2015年 Dave. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-@interface UIViewController (FWViewControllerCallback)
+
+@interface UIViewController (FWExtension)
 - (void)popedCallback:(id)obj;
 - (void)fw_dismissVCAnimated:(BOOL)flag sendObject:(id)obj completion:(void (^)(void))completion;
 @end
+
 @interface UINavigationController (FWExtension)
 
 - (NSArray<UIViewController *> *)fw_popToRootVCAnimated:(BOOL)animated sendObject:(id)obj;
@@ -22,5 +24,9 @@
 - (NSArray<UIViewController *> *)fw_popToBottomVCClass:(Class)vcClass animated:(BOOL)animated sendObject:(id)obj;
 ///弹出到最上层的vcClass视图控制器
 - (NSArray<UIViewController *> *)fw_popToTopVCClass:(Class)vcClass animated:(BOOL)animated sendObject:(id)obj;
+
+@end
+
+@interface UITabBarController (FWExtension)
 
 @end

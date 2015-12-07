@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		557346491C12BF1600DBD318 /* UINavigationController+FWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 557346481C12BF1600DBD318 /* UINavigationController+FWExtension.m */; };
 		5573464C1C13370B00DBD318 /* UINavigationItem+MRCBackBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5573464B1C13370B00DBD318 /* UINavigationItem+MRCBackBarButtonItem.m */; };
 		55789F831C148C6700303910 /* HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 55789F801C148C6700303910 /* HTTPRequest.m */; };
-		55789F841C148C6700303910 /* HTTPRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 55789F821C148C6700303910 /* HTTPRequestManager.m */; };
+		55789F841C148C6700303910 /* FWHTTPRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 55789F821C148C6700303910 /* FWHTTPRequestManager.m */; };
 		55789F8C1C14928600303910 /* FWTestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 55789F8B1C14928600303910 /* FWTestViewModel.m */; };
 		557C2E1C1C0FD347003A1E0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2E1B1C0FD347003A1E0A /* main.m */; };
 		557C2E1F1C0FD347003A1E0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2E1E1C0FD347003A1E0A /* AppDelegate.m */; };
@@ -26,6 +25,7 @@
 		557C2EAD1C10285E003A1E0A /* FWTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2EAC1C10285E003A1E0A /* FWTableViewController.m */; };
 		557C2F091C103E70003A1E0A /* UISearchBar+MRCShowsCancelButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2EFF1C103E70003A1E0A /* UISearchBar+MRCShowsCancelButton.m */; };
 		557C2F0C1C104170003A1E0A /* FWTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C2F0B1C104170003A1E0A /* FWTestViewController.m */; };
+		557F39241C15880F005C428A /* UIViewController+FWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 557F39231C15880F005C428A /* UIViewController+FWExtension.m */; };
 		67CFC975D593287B547C95D8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 307E3D377AC52EB3267B605F /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -49,14 +49,12 @@
 /* Begin PBXFileReference section */
 		307E3D377AC52EB3267B605F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4122EE91D358A626CA8CF856 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		557346471C12BF1600DBD318 /* UINavigationController+FWExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FWExtension.h"; sourceTree = "<group>"; };
-		557346481C12BF1600DBD318 /* UINavigationController+FWExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FWExtension.m"; sourceTree = "<group>"; };
 		5573464A1C13370B00DBD318 /* UINavigationItem+MRCBackBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+MRCBackBarButtonItem.h"; sourceTree = "<group>"; };
 		5573464B1C13370B00DBD318 /* UINavigationItem+MRCBackBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+MRCBackBarButtonItem.m"; sourceTree = "<group>"; };
 		55789F7F1C148C6700303910 /* HTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequest.h; sourceTree = "<group>"; };
 		55789F801C148C6700303910 /* HTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequest.m; sourceTree = "<group>"; };
-		55789F811C148C6700303910 /* HTTPRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequestManager.h; sourceTree = "<group>"; };
-		55789F821C148C6700303910 /* HTTPRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequestManager.m; sourceTree = "<group>"; };
+		55789F811C148C6700303910 /* FWHTTPRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWHTTPRequestManager.h; sourceTree = "<group>"; };
+		55789F821C148C6700303910 /* FWHTTPRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWHTTPRequestManager.m; sourceTree = "<group>"; };
 		55789F8A1C14928600303910 /* FWTestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWTestViewModel.h; sourceTree = "<group>"; };
 		55789F8B1C14928600303910 /* FWTestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWTestViewModel.m; sourceTree = "<group>"; };
 		557C2E171C0FD347003A1E0A /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +86,8 @@
 		557C2EFF1C103E70003A1E0A /* UISearchBar+MRCShowsCancelButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+MRCShowsCancelButton.m"; sourceTree = "<group>"; };
 		557C2F0A1C104170003A1E0A /* FWTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWTestViewController.h; sourceTree = "<group>"; };
 		557C2F0B1C104170003A1E0A /* FWTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWTestViewController.m; sourceTree = "<group>"; };
+		557F39221C15880F005C428A /* UIViewController+FWExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FWExtension.h"; sourceTree = "<group>"; };
+		557F39231C15880F005C428A /* UIViewController+FWExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FWExtension.m"; sourceTree = "<group>"; };
 		A4903829E2D36840086D6B44 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,8 +160,8 @@
 				55789F8B1C14928600303910 /* FWTestViewModel.m */,
 				55789F7F1C148C6700303910 /* HTTPRequest.h */,
 				55789F801C148C6700303910 /* HTTPRequest.m */,
-				55789F811C148C6700303910 /* HTTPRequestManager.h */,
-				55789F821C148C6700303910 /* HTTPRequestManager.m */,
+				55789F811C148C6700303910 /* FWHTTPRequestManager.h */,
+				55789F821C148C6700303910 /* FWHTTPRequestManager.m */,
 				557C2E671C0FD589003A1E0A /* View */,
 				557C2E681C0FD589003A1E0A /* ViewModel */,
 				557C2E231C0FD347003A1E0A /* Main.storyboard */,
@@ -239,8 +239,8 @@
 		557C2EA21C0FD7AF003A1E0A /* My */ = {
 			isa = PBXGroup;
 			children = (
-				557346471C12BF1600DBD318 /* UINavigationController+FWExtension.h */,
-				557346481C12BF1600DBD318 /* UINavigationController+FWExtension.m */,
+				557F39221C15880F005C428A /* UIViewController+FWExtension.h */,
+				557F39231C15880F005C428A /* UIViewController+FWExtension.m */,
 				557C2E9F1C0FD7A1003A1E0A /* FWViewController.h */,
 				557C2EA01C0FD7A1003A1E0A /* FWViewController.m */,
 				557C2EAB1C10285E003A1E0A /* FWTableViewController.h */,
@@ -459,9 +459,9 @@
 				5573464C1C13370B00DBD318 /* UINavigationItem+MRCBackBarButtonItem.m in Sources */,
 				557C2F091C103E70003A1E0A /* UISearchBar+MRCShowsCancelButton.m in Sources */,
 				55789F8C1C14928600303910 /* FWTestViewModel.m in Sources */,
-				557346491C12BF1600DBD318 /* UINavigationController+FWExtension.m in Sources */,
 				557C2EAA1C1024DA003A1E0A /* FWTableViewModel.m in Sources */,
-				55789F841C148C6700303910 /* HTTPRequestManager.m in Sources */,
+				557F39241C15880F005C428A /* UIViewController+FWExtension.m in Sources */,
+				55789F841C148C6700303910 /* FWHTTPRequestManager.m in Sources */,
 				557C2EA11C0FD7A1003A1E0A /* FWViewController.m in Sources */,
 				557C2E1F1C0FD347003A1E0A /* AppDelegate.m in Sources */,
 				557C2E1C1C0FD347003A1E0A /* main.m in Sources */,

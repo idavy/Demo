@@ -1,6 +1,5 @@
 //
 //  HTTPReqeust.h
-//  ProofMVVM
 //
 //  Created by Dave on 15/11/25.
 //  Copyright © 2015年 Dave. All rights reserved.
